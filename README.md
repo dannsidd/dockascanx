@@ -1,10 +1,4 @@
----
 
-# 🚀 DockaScanX – AI-Enhanced Container Vulnerability Scanner
-
-**DockaScanX** is an advanced **AI-integrated DevSecOps toolkit** that automates **Docker image vulnerability scanning**, provides **intelligent fix suggestions**, and generates **interactive HTML remediation reports** — empowering teams to **secure containerized applications effortlessly**.
-
----
 
 ## 🧠 Overview
 
@@ -172,5 +166,6 @@ Developed under open-source standards for community use.
 * ⚙️ [Ready Tensor Page (if applicable)](https://readytensor.ai/)
 
 ---
+
 
 
