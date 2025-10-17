@@ -1,0 +1,20 @@
+# Step 1: Use the same base image as vulnerable image
+FROM python:3.8-slim
+
+# Step 2: Upgrade OS packages to latest secure versions
+RUN apt-get update && \
+    apt-get upgrade -y --no-install-recommends && \
+    apt-get install -y --no-install-recommends openssl && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+
+# Step 3: Upgrade Python packages if you have requirements.txt
+# COPY requirements.txt /app/requirements.txt
+# RUN pip install --upgrade pip && pip install -r /app/requirements.txt
+
+# Step 4: Copy your application files
+COPY app /app
+WORKDIR /app
+
+# Step 5: Optional - default command
+# CMD ["python", "main.py"]

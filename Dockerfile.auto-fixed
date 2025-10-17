@@ -1,0 +1,11 @@
+FROM python:3.8-slim
+
+# Install latest patched versions of vulnerable packages
+# No vulnerable packages detected, no fixes required
+
+# Copy application files
+COPY app /app
+WORKDIR /app
+
+# Default command
+CMD ["python3"]
